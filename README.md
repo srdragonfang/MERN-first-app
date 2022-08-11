@@ -485,5 +485,9 @@ redux-saga là một middleware nằm giữa ACTION và REDUCERS
         ex: 
             - call api
     - Sau khi có dữ liệu trả về từ API nó mới tiếp tục đưa dữ liệu
-Khi có một active được dispatch thì sẽ được đưa vào redux-saga để gọi một biến API.#   M E R N - f i r s t - a p p  
- 
+Khi có một active được dispatch thì sẽ được đưa vào redux-saga để gọi một biến API.
+
+
+### 8 src/pages/HomePage.js
+
+npm i @material-ui/core @material-ui/icons

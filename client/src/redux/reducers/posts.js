@@ -17,6 +17,7 @@ export default function postReducers(state = INIT_STATE.posts, action) {
 				...state,
 				isLoading: false,
 				data: action.payload,
+                // trả về một array chứ không phải object
 			};
 		// case: getPostsFailure
 		case getType(getPosts.getPostsFailure):

@@ -1,4 +1,4 @@
-import { takeLatest, call } from 'redux-saga/effects';
+import { takeLatest, call, put } from 'redux-saga/effects';
 import * as actions from '../actions';
 import * as api from '../../api'
 function* fetchPostSaga(action) {
@@ -9,6 +9,7 @@ function* fetchPostSaga(action) {
     console.log('[posts]', posts);
     // call = khi muốn thực thi một function thì gọi call
     // trường hợp call tới một promise thì function này sẽ đợi cho tới khi function này được restone, khi có kết quả trả về thì yeild mới hoàn thành xong.
+    yield put(actions.getPosts.getPostsSuccess(posts.data))
 
 }
 
